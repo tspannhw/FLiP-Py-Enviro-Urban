@@ -17,25 +17,91 @@ Apache Pulsar + MQTT + Pimoroni Enviro Urban + Raspberry Pi Pico
 |PM10|`pm10`|micrograms per cubic metre|µg/m³|`2`|
 |Voltage|`voltage`|volts|V|`4.035`|
 
-Similar to 
+Read
 
 ````
-{
-  "nickname": "outside-pulsar", 
-  "model": "urban",
-  "uid": "e6614c775b8c4035", 
-  "timestamp": "2022-09-04T10:40:24Z", 
-  "readings": {
-    "temperature": 27.57, 
-    "humidity": 49.33, 
-    "pressure": 996.22, 
-    "noise": 0.41, 
-    "pm1": 0.0, 
-    "pm2_5": 0.0, 
-    "pm10": 0.0, 
-    "voltage": 4.954
-  }
-}
+key:[null], properties:[], content:
+
+value=
+
+{"pm10": 8, "pressure": 1007.79, "device": "pulsaroutside", "pm2_5": 8, "noise": 1.51, "humidity": 29.76, 
+"timestamp": "2022-10-19 15:58:09", "temperature": 26.9, "pm1": 4}
+
+
+type=class java.lang.String}
+
+````
+
+
+#### Using Command Line Consumer
+
+````
+
+bin/pulsar-client consume
+The following option is required: [-s | --subscription-name]
+Consume messages from a specified topic
+Usage: consume [options] TopicName
+  Options:
+    -ac, --auto_ack_chunk_q_full
+      Auto ack for oldest message on queue is full
+      Default: false
+    -ekv, --encryption-key-value
+      The URI of private key to decrypt payload, for example
+      file:///path/to/private.key or data:application/x-pem-file;base64,*****
+    --hex
+      Display binary messages in hex.
+      Default: false
+    --hide-content
+      Do not write the message to console.
+      Default: false
+    -mc, --max_chunked_msg
+      Max pending chunk messages
+      Default: 0
+    -n, --num-messages
+      Number of messages to consume, 0 means to consume forever.
+      Default: 1
+    -pm, --pool-messages
+      Use the pooled message
+      Default: true
+    -q, --queue-size
+      Consumer receiver queue size.
+      Default: 0
+    -r, --rate
+      Rate (in msg/sec) at which to consume, value 0 means to consume messages
+      as fast as possible.
+      Default: 0.0
+    --regex
+      Indicate the topic name is a regex pattern
+      Default: false
+    -st, --schema-type
+      Set a schema type on the consumer, it can be 'bytes' or 'auto_consume'
+      Default: bytes
+    -m, --subscription-mode
+      Subscription mode.
+      Default: Durable
+      Possible Values: [Durable, NonDurable]
+  * -s, --subscription-name
+      Subscription name.
+    -p, --subscription-position
+      Subscription position.
+      Default: Latest
+      Possible Values: [Latest, Earliest]
+    -t, --subscription-type
+      Subscription type.
+      Default: Exclusive
+      Possible Values: [Exclusive, Shared, Failover, Key_Shared]
+      
+````
+
+#### Consume Messsages
+
+````
+bin/pulsar-client consume "persistent://public/default/enviro%2Fpulsaroutside" -s "outside" -n 0
+
+
+bin/pulsar-client consume "persistent://public/default/enviro%2Fpulsaroutside" -s "outside" -n 0 --subscription-type "Shared" --subscription-position "Earliest" --subscription-mode "Durable" --schema-type "auto_consume"
+
+
 ````
 
 #### Sending Data to MQTT -> MoP -> Pulsar
