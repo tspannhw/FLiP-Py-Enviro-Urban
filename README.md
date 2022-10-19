@@ -104,6 +104,69 @@ bin/pulsar-client consume "persistent://public/default/enviro%2Fpulsaroutside" -
 
 ````
 
+#### Stream of Messages
+
+````
+
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1007.75, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 31.81, "timestamp": "2022-10-19 16:03:09", "temperature": 27.08, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1008.04, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.5, "humidity": 28.44, "timestamp": "2022-10-19 16:06:42", "temperature": 26.79, "pm1": 4}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 8, "pressure": 1008.13, "device": "pulsaroutside", "pm2_5": 8, "noise": 1.51, "humidity": 30.99, "timestamp": "2022-10-19 16:07:23", "temperature": 26.65, "pm1": 4}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 2, "pressure": 1007.97, "device": "pulsaroutside", "pm2_5": 2, "noise": 1.51, "humidity": 29.38, "timestamp": "2022-10-19 16:12:09", "temperature": 24.26, "pm1": 0}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1008.06, "device": "pulsaroutside", "pm2_5": 4, "noise": 1.51, "humidity": 31.33, "timestamp": "2022-10-19 16:17:09", "temperature": 22.89, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1008.18, "device": "pulsaroutside", "pm2_5": 4, "noise": 1.51, "humidity": 32.55, "timestamp": "2022-10-19 16:22:09", "temperature": 22.12, "pm1": 0}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1008.12, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 33.72, "timestamp": "2022-10-19 16:23:34", "temperature": 22.14, "pm1": 0}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1008.08, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 33.9, "timestamp": "2022-10-19 16:24:13", "temperature": 22.55, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1008.08, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 30.0, "timestamp": "2022-10-19 16:29:09", "temperature": 24.45, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 8, "pressure": 1008.01, "device": "pulsaroutside", "pm2_5": 8, "noise": 1.51, "humidity": 29.53, "timestamp": "2022-10-19 16:34:09", "temperature": 25.14, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1007.94, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 28.44, "timestamp": "2022-10-19 16:39:09", "temperature": 25.56, "pm1": 0}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.89, "device": "pulsaroutside", "pm2_5": 4, "noise": 1.51, "humidity": 27.83, "timestamp": "2022-10-19 16:44:09", "temperature": 25.78, "pm1": 0}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.79, "device": "pulsaroutside", "pm2_5": 4, "noise": 1.51, "humidity": 27.46, "timestamp": "2022-10-19 16:49:09", "temperature": 25.89, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1007.74, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 27.26, "timestamp": "2022-10-19 16:54:09", "temperature": 25.96, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1007.79, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 27.15, "timestamp": "2022-10-19 16:59:09", "temperature": 26.05, "pm1": 0}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1007.68, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 27.11, "timestamp": "2022-10-19 17:04:09", "temperature": 26.1, "pm1": 0}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1007.58, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 27.12, "timestamp": "2022-10-19 17:09:09", "temperature": 26.13, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1007.45, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 27.15, "timestamp": "2022-10-19 17:14:09", "temperature": 26.21, "pm1": 0}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1007.41, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 27.26, "timestamp": "2022-10-19 17:19:09", "temperature": 26.35, "pm1": 0}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.4, "device": "pulsaroutside", "pm2_5": 4, "noise": 1.51, "humidity": 27.32, "timestamp": "2022-10-19 17:24:09", "temperature": 26.47, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.29, "device": "pulsaroutside", "pm2_5": 4, "noise": 1.51, "humidity": 27.29, "timestamp": "2022-10-19 17:29:09", "temperature": 26.54, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.37, "device": "pulsaroutside", "pm2_5": 4, "noise": 1.51, "humidity": 27.17, "timestamp": "2022-10-19 17:34:09", "temperature": 26.59, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.35, "device": "pulsaroutside", "pm2_5": 4, "noise": 1.51, "humidity": 27.64, "timestamp": "2022-10-19 17:39:09", "temperature": 26.13, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 6, "pressure": 1007.4, "device": "pulsaroutside", "pm2_5": 6, "noise": 1.51, "humidity": 31.81, "timestamp": "2022-10-19 17:44:09", "temperature": 24.19, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 8, "pressure": 1007.43, "device": "pulsaroutside", "pm2_5": 8, "noise": 1.51, "humidity": 32.48, "timestamp": "2022-10-19 17:49:09", "temperature": 23.58, "pm1": 4}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.57, "device": "pulsaroutside", "pm2_5": 4, "noise": 1.51, "humidity": 32.6, "timestamp": "2022-10-19 17:54:09", "temperature": 23.29, "pm1": 2}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.47, "device": "pulsaroutside", "pm2_5": 4, "noise": 1.51, "humidity": 32.63, "timestamp": "2022-10-19 17:59:09", "temperature": 23.01, "pm1": 0}, type=class java.lang.String}
+----- got message -----
+key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.53, "device": "pulsaroutside", "pm2_5": 4, "noise": 1.51, "humidity": 33.0, "timestamp": "2022-10-19 18:04:09", "temperature": 22.74, "pm1": 2}, type=class java.lang.String}
+
+````
+
 #### Sending Data to MQTT -> MoP -> Pulsar
 
 #### References
