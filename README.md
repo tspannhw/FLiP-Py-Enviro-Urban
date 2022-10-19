@@ -112,6 +112,7 @@ bin/pulsar-client consume "persistent://public/default/enviro%2Fpulsaroutside" -
 * https://shop.pimoroni.com/products/weatherproof-cover-for-outdoor-sensors?variant=40047884468307
 * https://github.com/pimoroni/enviro/blob/main/documentation/getting-started.md
 * https://github.com/pimoroni/enviro/blob/main/documentation/destinations/mqtt.md
+* https://github.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings
 
 #### Projects
 
