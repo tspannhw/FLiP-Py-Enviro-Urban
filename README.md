@@ -169,6 +169,22 @@ key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.53, "devi
 
 #### Sending Data to MQTT -> MoP -> Pulsar
 
+
+
+#### Pulsar Cluster Settings for MoP
+
+````
+messagingProtocols=mqtt,amqp,kafka
+
+# directory
+protocolHandlerDirectory=./protocols
+
+# mqtt 3.1.1
+mqttListeners=mqtt://127.0.0.1:1883
+advertisedAddress=127.0.0.1
+
+````
+
 #### References
 
 * https://shop.pimoroni.com/products/enviro-urban?variant=40056508252243
