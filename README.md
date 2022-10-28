@@ -167,6 +167,10 @@ key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.53, "devi
 
 ````
 
+![Device](https://github.com/tspannhw/FLiP-Py-Enviro-Urban/raw/main/envirourban.jpg)
+
+![DeviceBack](https://github.com/tspannhw/FLiP-Py-Enviro-Urban/raw/main/envirourbanback.jpg)
+
 #### Sending Data to MQTT -> MoP -> Pulsar
 
 
