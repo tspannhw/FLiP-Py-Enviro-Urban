@@ -98,7 +98,6 @@ Usage: consume [options] TopicName
 ````
 bin/pulsar-client consume "persistent://public/default/enviro%2Fpulsaroutside" -s "outside" -n 0
 
-
 bin/pulsar-client consume "persistent://public/default/enviro%2Fpulsaroutside" -s "outside" -n 0 --subscription-type "Shared" --subscription-position "Earliest" --subscription-mode "Durable" --schema-type "auto_consume"
 
 
@@ -173,7 +172,7 @@ key:[null], properties:[], content:{value={"pm10": 4, "pressure": 1007.53, "devi
 
 #### Sending Data to MQTT -> MoP -> Pulsar
 
-
+![MQTT](https://raw.githubusercontent.com/tspannhw/FLiP-Py-Enviro-Urban/main/urbanmqtt.png)
 
 #### Pulsar Cluster Settings for MoP
 
