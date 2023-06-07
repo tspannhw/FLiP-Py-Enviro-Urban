@@ -2,6 +2,8 @@
 
 Apache Pulsar + MQTT + Pimoroni Enviro Urban + Raspberry Pi Pico
 
+https://github.com/pimoroni/enviro/blob/main/documentation/getting-started.md
+
 #### Sensors
 
 * https://github.com/pimoroni/enviro/blob/main/documentation/boards/enviro-urban.md
